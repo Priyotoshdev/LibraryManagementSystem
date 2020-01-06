@@ -1,0 +1,29 @@
+<section style="height: 500px;">
+<h3 class="text-center">Search Books</h3>
+<div style="width: 300px;" class="col-md-2 offset-3">
+  <!-- <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="lastname"></label>
+      <input type="text" class="form-control" id="title" required [(ngModel)]="title" name="title">
+    </div> -->
+
+
+    <form (ngSubmit)="onSubmit()" id="searchform">
+      <div class = "form-group">
+          <input type="text" placeholder="search books" required [(ngModel)]="title" name="title" id="title" class ="form-control search_input" id="search">
+          <span class="search_icon"><i class="fas fa-search"></i></span>
+      </div>
+  
+
+
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Search</button>
+    </div>
+  </form>
+</div>
+<ul>
+  <li *ngFor="let book of books">
+    <h4>{{book.id}} - {{book.title}} {{book.author_Name}} {{book.publisher}}</h4>
+  </li>
+</ul>
+</section>

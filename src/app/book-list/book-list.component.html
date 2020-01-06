@@ -1,0 +1,10 @@
+<section style="height:500px;">
+<h3>Books</h3>
+<div *ngFor="let book of books | async" style="width: 300px;">
+  <app-book-details [book]='book'></app-book-details>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteBook()'>Delete All</button>
+</div>
+</section>

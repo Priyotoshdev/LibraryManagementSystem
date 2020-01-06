@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./contact.css"> -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <div class="thm-container mt-4 mb-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="contact-form-content">
+                            <div class="title">
+                                <span>Contact with us</span>
+                                <br>
+                                <br>
+                                <h2>Send Message</h2>
+                            </div><!-- /.title -->
+                            <form action="inc/sendemail.php" class="contact-form">
+                                <input type="text" name="name" placeholder="Your full name" required>
+                                <input type="text" name="email" placeholder="Your email address" required>
+                                <textarea name="message" placeholder="What you are looking for?"></textarea>
+                                <button type="submit" class="thm-btn yellow-bg" (click)='handleClick($event)' >Submit Now</button>
+                                <div class="form-result"></div><!-- /.form-result -->
+                            </form>
+                        </div><!-- /.contact-form-content -->
+                    </div><!-- /.col-md-8 -->
+                    <div class="col-md-4">
+                        <div class="contact-info text-center">
+                            <div class="title text-center">
+                               <span>Contact info</span>
+                               <h2>Details</h2>
+                            </div><!-- /.title -->
+                            <div class="add">
+                            <div class="single-contact-info add">
+                                <h4>Address</h4>
+                                <p> Navi mumbai,Airoli </p>
+                            </div><!-- /.single-contact-info -->
+                            <div class="single-contact-info">
+                                <h4>Phone</h4>
+                                <p>Local: 222 999 888 <br> Mobile: 000 8888 999</p>
+                            </div><!-- /.single-contact-info -->
+                            <div class="single-contact-info">
+                                    <h4>Email</h4>
+                                    <p>needhelp@jdshvjhkjwbd.com <br> ksdfjbkjsedfb.com</p>
+                                </div><!-- /.single-contact-info -->
+                                <div class="single-contact-info">
+                                    <h4>Follow</h4>
+                                    <div class="social">
+                                       <a href="#" class="fab fa-twitter hvr-pulse"></a><!--  
+                                        --><a href="#" class="fab fa-pinterest hvr-pulse"></a><!--  
+                                        --><a href="#" class="fab fa-facebook-f hvr-pulse"></a><!--  
+                                        --><a href="#" class="fab fa-youtube hvr-pulse"></a>
+                                   </div><!-- /.social -->
+                                </div><!-- /.single-contact-info -->
+                            </div><!-- /.contact-info -->
+                        </div><!-- /.col-md-4 -->
+                    </div><!-- /.row -->
+                </div>
+            </div>
+        
+  
+</body>
+</html>

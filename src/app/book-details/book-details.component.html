@@ -1,0 +1,22 @@
+<div *ngIf="book">
+  <div>
+    <label>Title: </label> {{book.title}}
+  </div>
+  <div>
+    <label>Author Name: </label> {{book.author_Name}}
+  </div>
+  <div>
+    <label>Publisher: </label> {{book.publisher}}
+  </div>
+  <div>
+    <label>Active: </label> {{book.active}}
+  </div>
+
+  <span class="button is-small btn-primary" *ngIf='book.active' (click)='updateActive(false)'>Inactive</span>
+
+  <span class="button is-small btn-primary" *ngIf='!book.active' (click)='updateActive(true)'>Active</span>
+
+  <span class="button is-small btn-danger" (click)='deleteBook()'>Delete</span>
+
+  <hr/>
+</div>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="row container col-md-4 offset-4 card">
+    <div class="col-sm-12" style="text-align:center;">
+      <h1>Login</h1>
+    </div>
+  
+    <div class="col-sm-12 card-body">
+        <form [formGroup]="loginForm"
+        (ngSubmit)="login()" method="post">
+        <p class="text-danger text-center">{{errorMessage}}</p>
+        <div class="form-group input1">
+          <!-- <label for="exampleInputEmail1" style="color: white;">Email address</label> -->
+          <i class="fas fa-user" style="color: white; position: absolute; margin-top: 10px;"></i>
+          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+          <!-- <p class ="text-danger"  >Email is required</p> -->
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group input1">
+          <!-- <label for="passwordInput" style="color: white;">Password</label> -->
+          <i class="fas fa-lock" style="color: white; position: absolute; margin-top: 10px;"></i>
+          <input formControlName="password" type="password" class="form-control" id="passwordInput" 
+  
+          aria-describedby="passHelp" placeholder="Password">
+          <!-- <p class ="text-danger" >Password is required</p> -->
+          <small id="passHelp" class="form-text text-muted"></small>
+        </div>
+            
+        <div class="form-group button iconsM" style="text-align:center;">
+          <ul>
+            <li><button type="button" class="btn btn-success float-left" [disabled] = "!loginForm.valid">LogIn</button></li>
+            <li><button type="button" class="btn btn-outline-warning float-right" (click)="moveToRegister()">Register</button></li>
+          </ul>            
+            
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
